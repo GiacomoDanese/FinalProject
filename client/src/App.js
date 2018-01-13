@@ -8,9 +8,8 @@ import Playlist from "./pages/Playlist";
 import SignUp from "./pages/SignUp";
 import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";
-import Logo from "./components/Logo";
 import LogIn from "./pages/LogIn";
-import background from "./components/Logo";
+import "./App.css";
 
 
 
@@ -18,8 +17,7 @@ import background from "./components/Logo";
 const App = () =>
 
   <Router>
-    <div>
-      <background />
+    <div className="background">
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
