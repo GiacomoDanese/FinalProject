@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, TextArea } from "../../components/Form";
+import { Input, TextArea, Button } from "../../components/Form";
 import { List, ListItem } from "../../components/List";
 import { Link } from "react-router-dom";
-import { Button } from 'react-bootstrap';
 import Modal from "../../components/Modal";
-
 
 class Feed extends Component {
 
@@ -16,7 +14,7 @@ class Feed extends Component {
     title: "",
     body: "",
     author: "",
-    imgUrl: "",
+    imgUrl: ""
   };
 
   componentDidMount() {
@@ -60,44 +58,8 @@ class Feed extends Component {
 
       <Container center>
         <Row>
-          <Col size="md-12" >
-              <h1>Music to your ears</h1>    
-            <form>
-              <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-              />
-              <Input
-                value={this.state.title}
-                onChange={this.handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-              />
-              <TextArea
-                value={this.state.body}
-                onChange={this.handleInputChange}
-                name="body"
-                placeholder="Write your Post here"
-              />
-              <Input
-                value={this.state.imgUrl}
-                onChange={this.handleInputChange}
-                name="imgUrl"
-                placeholder="add and image"
-              />
-              <Button
-                disabled={!(this.state.author && this.state.title)}
-                onClick={this.handleFormSubmit}>
-                Submit Post
-              </Button>
-            </form>
-          </Col>
-        </Row>
-        <Row>
           <Col size="md-12">
-              <h1>Posts</h1>
+              <h1 style={{color: "white", marginLeft: "84px", marginRight: "auto"}}>Posts</h1>
             {this.state.posts.length ? (
               <List>
                 {this.state.posts.map(post => (
@@ -107,7 +69,7 @@ class Feed extends Component {
                         <h6>{post.title}</h6> 
                         <h7>{post.body}</h7>
                         <br></br>
-                        <img src={post.imgUrl} style={{width: 200, height: 200}}></img>
+                        <img src={post.imgUrl} alt="" style={{width: 200, height: 200,}}></img>
                     </Link>
                   </ListItem>
                 ))}
@@ -115,15 +77,19 @@ class Feed extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
-            <Modal> 
-            </Modal>
           </Col>
         </Row>
-        
+        <Modal
+          author={this.state.author}
+          title={this.state.title}
+          body={this.state.body}
+          imgUrl={this.state.imgUrl}
+          onChange={this.handleInputChange}
+          handleFormSubmit={this.handleFormSubmit}
+        ></Modal>
       </Container>
     )
   }  
 }
-
 
 export default Feed;

@@ -8,6 +8,7 @@ import Playlist from "./pages/Playlist";
 import SignUp from "./pages/SignUp";
 import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import LogIn from "./pages/LogIn";
 import "./App.css";
 
@@ -29,6 +30,7 @@ const App = () =>
         <Route exact path="/log-in" component={LogIn} />
         <Route component={NoMatch} />
       </Switch>
+      <Footer />
     </div>
   </Router>;
 

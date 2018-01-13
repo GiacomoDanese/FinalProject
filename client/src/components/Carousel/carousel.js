@@ -1,29 +1,28 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Logo from '../Logo/city.jpeg';
+import Logo from '../Logo/clouds.jpg';
 
 
 const Carousel = props => (
-	<div className = 'container-center' style={{position: "absolute"}}>
+	<div className = 'container-center'>
 		<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
           <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-          <li data-target="#carouselExampleIndicators" data-slide-to={2} />
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src={Logo} style={{width: 500, height: 500, fontFamily: 'Oxygen'}} alt="First slide" />
-            <div className="carousel-caption d-none d-md-block">
-             <h1> Welcome!! </h1>
+            <img className="d-block w-100" src={Logo} style={{width: 500, height: 500, opacity: .7}} alt="First slide" />
+            <div className="carousel-caption d-none d-md-block" style={{color: "#000000" }}>
+            <h1> <strong> Welcome! </strong></h1>
+            <h4> <strong> Keep up to date with your favourite music trends or Learn music like you've never done before </strong> </h4>
 			 </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={Logo} style={{width: 500, height: 500}} alt="Second slide" />
+            <img className="d-block w-100" src={Logo} style={{width: 500, height: 500, opacity: .7}} alt="Second slide" />
             <div className="carousel-caption d-none d-md-block">
-			    <button type="button" class="btn btn-secondary btn-sm"> 
-            		<Link to="/lean">LEARN</Link> 
-            	</button>
+			    <h1> <strong> About Us </strong> </h1>
+          
 			 </div>
           </div>
         </div>
