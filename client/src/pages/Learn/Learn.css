@@ -12,7 +12,8 @@ h5, h6 {
 .card-deck {
  	padding: 50px 50px; 
  	text-align: center;
- 	margin: 70px;
+ 	margin-top: 70px;
+ 	margin-bottom: 0px;
  	display:flex-inline;
 }
 

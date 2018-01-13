@@ -12,6 +12,8 @@ const Home = props => (
             <Carousel> </Carousel>
           </Col>
         </Row>
+        <Row>
+        </Row>
         
       </Container>
     </div>

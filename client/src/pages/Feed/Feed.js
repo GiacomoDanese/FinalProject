@@ -191,7 +191,7 @@ class Feed extends Component {
       <Container center>
         <Row>
           <Col size="md-12">
-              <h1>Posts</h1>
+              <h1 style={{color: "white", marginLeft: "84px", marginRight: "auto"}}>Posts</h1>
             {this.state.posts.length ? (
               <List>
                 {this.state.posts.map(post => (
