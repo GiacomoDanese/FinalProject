@@ -13,7 +13,7 @@ const Navbar = props => (
               <Link to="/">Home</Link> 
               <span className="sr-only">(current)</span></a>
               <a className="nav-link text-dark">
-              <Link to="/feed ">Feed</Link>
+              <Link to="/feed">Feed</Link>
               </a>
               <a className="nav-link text-dark">
               <Link to="/learn">Learn</Link>
