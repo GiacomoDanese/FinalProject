@@ -13,11 +13,9 @@ const Carousel = props => (
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src={Logo} style={{width: 500, height: 500}} alt="First slide" />
+            <img className="d-block w-100" src={Logo} style={{width: 500, height: 500, fontFamily: 'Oxygen'}} alt="First slide" />
             <div className="carousel-caption d-none d-md-block">
-            <button type="button" class="btn btn-secondary btn-sm"> 
-            <Link to="/feed">POST</Link> 
-            </button>
+             <h1> Welcome!! </h1>
 			 </div>
           </div>
           <div className="carousel-item">
