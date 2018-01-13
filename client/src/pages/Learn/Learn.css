@@ -1,0 +1,44 @@
+img {
+ 	width: 20%;
+ 	height: 20%;
+ 	border-radius: 100px 100px;
+ 	padding: 20px;
+}
+
+h5, h6 {
+	font-variant: small-caps;
+}
+
+.card-deck {
+ 	padding: 50px 50px; 
+ 	text-align: center;
+ 	margin: 70px;
+ 	display:flex-inline;
+}
+
+.card{
+	border: 1px solid red;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    display:flex;
+}
+
+.card-title {
+	padding: 5px;
+	font-family: 'Libre Baskerville', serif;
+
+}
+
+.card-text {
+	font-size: 14px;
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+
+}
+
+.btn-primary {
+	border: 1px solid;
+    padding: 2px;
+    box-shadow: 3px 3px 5px #888888;
+    background: #4b6b9e;
+}
