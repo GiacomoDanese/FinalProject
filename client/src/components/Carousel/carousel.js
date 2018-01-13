@@ -13,15 +13,16 @@ const Carousel = props => (
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img className="d-block w-100" src={Logo} style={{width: 500, height: 500, opacity: .7}} alt="First slide" />
-            <div className="carousel-caption d-none d-md-block" style={{color: "#000000" }}>
+            <div className="carousel-caption d-none d-md-block" style={{color: "#000000", padding: '20px'}}>
             <h1> <strong> Welcome! </strong></h1>
             <h4> <strong> Keep up to date with your favourite music trends or Learn music like you've never done before </strong> </h4>
 			 </div>
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src={Logo} style={{width: 500, height: 500, opacity: .7}} alt="Second slide" />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block" style={{color: "#000000", padding: '20px'}}>
 			    <h1> <strong> About Us </strong> </h1>
+          <h4> <strong> We're a team of four young energetic coders learning our hand at React.js. Graduating from this bootcamp we would like bring our new found skills and friendships into the world Happy Coding Everyone! </strong> </h4>
           
 			 </div>
           </div>
